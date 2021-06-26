@@ -1,7 +1,5 @@
-const { response } = require("express");
-const express = require("express"); //importando express
+const app = require("./src/app.js");
 
-const app = express();
 
 app.get("/", (request, response) => {
   response.status(200).send({
